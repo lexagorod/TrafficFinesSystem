@@ -3,6 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Traffic_fine_system">
     <Application.Resources>
-         
+
     </Application.Resources>
 </Application>

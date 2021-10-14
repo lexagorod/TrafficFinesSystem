@@ -19,7 +19,7 @@ namespace Traffic_fine_system.Views
     /// <summary>
     /// Interaction logic for TextBox.xaml
     /// </summary>
-    public partial class FineBox : UserControl, IFine
+    public partial class FineBox : UserControl, IFineCost
     {
         public FineBox()
         {

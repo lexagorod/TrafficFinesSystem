@@ -26,6 +26,7 @@ namespace Traffic_fine_system
             _viewModel = viewModel;
             InitializeComponent();
             InitializeButtons();
+            new FinesReaderWriter();
         }
 
         public void InitializeButtons()

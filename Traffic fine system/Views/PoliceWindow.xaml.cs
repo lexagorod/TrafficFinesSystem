@@ -24,11 +24,31 @@ namespace Traffic_fine_system
         public PoliceWindow()
         {
             InitializeComponent();
+
+            gvAddViolator.DataContext = new FineIssueSubject();
         }
 
         public void Initialize(PoliceViewModel viewModel)
         {
             _viewModel = viewModel;
+
+            violationsList.ItemsSource = _viewModel.GetFineTypes();
+        }
+
+
+        private void AddViolatorButton_click(object sender, RoutedEventArgs e)
+        {
+            var fineIssueSubject = new FineIssueSubject() { Number = txtNumber.Text, Name = txtName.Text };
+            var validationEngine = new ValidationEngine();
+
+            var isValid = validationEngine.Validate(fineIssueSubject);
+
+            errorList.ItemsSource = validationEngine.GetBrokenRules();
+
+            if (isValid)
+            {
+                _viewModel.AddFine(fineIssueSubject.Number, new IssuedFine { FineType = violationsList.Text, FineAmount = 15, VehicleOwner = fineIssueSubject.Name, DateTimeIssued = DateTime.Now });
+            }
         }
     }
 }

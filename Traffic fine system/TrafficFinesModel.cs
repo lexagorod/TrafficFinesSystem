@@ -11,7 +11,7 @@ namespace Traffic_fine_system
 {
     public class TrafficFinesModel
     {
-        private readonly string _trafficFinesInfoPath = "Server/FinesInfo.json";
+        private readonly string _trafficFinesInfoPath = "Server/FinesCost.json";
         private ReactiveProperty<Dictionary<string, decimal>> _trafficFinesInfoRX = new ReactiveProperty<Dictionary<string, decimal>>();
         private Dictionary<FineType, decimal> _cachedtrafficFinesInfo;
         public Dictionary<FineType, decimal> TrafficFinesInfo
@@ -35,7 +35,6 @@ namespace Traffic_fine_system
         {
             DeserializeTrafficInfo();
             SubscribeReactiveJsonChange();
-            //_trafficFinesInfoRX.Value = new Dictionary<string, decimal>() { { "dfsdf", 50} };
         }
 
         private void DeserializeTrafficInfo()
@@ -54,7 +53,7 @@ namespace Traffic_fine_system
             }
         }
 
-        private void Serialize(Dictionary<string, decimal> FinesInfo)
+        private void Serialize(Dictionary<string, decimal> finesInfo)
         {
             var serializeOptions = new JsonSerializerOptions
             {
@@ -63,7 +62,7 @@ namespace Traffic_fine_system
                  new DictionaryTKeyEnumTValueConverter()
                 }
             };
-            var trafficInfo = JsonSerializer.Serialize(_trafficFinesInfoRX.Value, serializeOptions);
+            var trafficInfo = JsonSerializer.Serialize(finesInfo, serializeOptions);
             File.WriteAllText(_trafficFinesInfoPath, trafficInfo);
         }
 

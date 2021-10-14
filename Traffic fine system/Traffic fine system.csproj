@@ -103,6 +103,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="BusinessBase.cs" />
+    <Compile Include="FineIssueSubject.cs" />
+    <Compile Include="FinesReaderWriter.cs" />
+    <Compile Include="IssuedFine.cs" />
+    <Compile Include="ValidationAttributes\BrokenRule.cs" />
+    <Compile Include="ValidationAttributes\NotNullOrEmptyAttribute.cs" />
+    <Compile Include="ValidationAttributes\ValidationAttribute.cs" />
+    <Compile Include="ValidationAttributes\ValidationEngine.cs" />
+    <Compile Include="Validators\NotNullOrEmptyValidationRule.cs" />
+    <Compile Include="Validators\PlateNumberValidationRule.cs" />
+    <Compile Include="Validators\NumericValidationRule.cs" />
     <Compile Include="Views\DriverWindow.xaml.cs">
       <DependentUpon>DriverWindow.xaml</DependentUpon>
     </Compile>
@@ -119,6 +130,9 @@
     <Compile Include="Views\FineBox.xaml.cs">
       <DependentUpon>FineBox.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\TextInputBox.xaml.cs">
+      <DependentUpon>TextInputBox.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WindowsController.cs" />
     <Page Include="Views\DriverWindow.xaml">
       <SubType>Designer</SubType>
@@ -134,12 +148,12 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="BasicFine.cs" />
+    <Compile Include="FineCost.cs" />
     <Compile Include="Converter.cs" />
     <Compile Include="Fines\FineType.cs" />
     <Compile Include="FineManager.cs" />
     <Compile Include="IDriver.cs" />
-    <Compile Include="IFine.cs" />
+    <Compile Include="IFineCost.cs" />
     <Compile Include="IFineIssuer.cs" />
     <Compile Include="Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -154,6 +168,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\FineBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\TextInputBox.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -185,7 +203,10 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <EmbeddedResource Include="Server\FinesInfo.json">
+    <EmbeddedResource Include="Server\FinesCost.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Server\ActualFines.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>

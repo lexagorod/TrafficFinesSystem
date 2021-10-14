@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Traffic_fine_system
 {
-    public class Fine : IFine
+    public class FineCost : IFineCost
     {
         public string FineType { get; set; }
         public decimal FineAmount { get; set; }

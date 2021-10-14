@@ -37,7 +37,7 @@ namespace Traffic_fine_system
 
         private void InitializeFinesView()
         {
-            FinesInfo.ItemsSource = _viewModel.GetFillFinesCollection();
+            FinesInfo.ItemsSource = _viewModel.GetFinesCollection();
             FinesInfo.CanUserDeleteRows = true;
         }
 

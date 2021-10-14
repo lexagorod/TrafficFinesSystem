@@ -2,13 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Traffic_fine_system
 {
-    interface IFine
+    public class BrokenRule
     {
-        string FineType { get; set; }
-        decimal FineAmount { get; set; }
+        public string Message { get; set; }
+        public string PropertyName { get; set;}
     }
 }

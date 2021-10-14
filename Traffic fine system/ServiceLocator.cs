@@ -10,10 +10,12 @@ namespace Traffic_fine_system
     {
         public WindowsController WindowsController;
         public TrafficFinesModel TrafficFinesModel;
+        public FinesReaderWriter FinesReaderWriter;
         public ServiceLocator()
         {
             TrafficFinesModel = new TrafficFinesModel();
             WindowsController = new WindowsController();
+            FinesReaderWriter = new FinesReaderWriter();
         }
     }
 }
