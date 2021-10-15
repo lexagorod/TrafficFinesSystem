@@ -8,9 +8,42 @@ namespace Traffic_fine_system.ViewModels
 {
     public class DriverViewModel : IViewModel
     {
+        private ServiceLocator _serviceLocator;
+        private IssuedFine[] _currentPlateNumberFines;
+        private string _currentPlateNumber;
         public DriverViewModel(ServiceLocator serviceLocator)
         {
-            serviceLocator.WindowsController.Show<DriverViewModel>(new DriverWindow(), this);
+            _serviceLocator = serviceLocator;
+            _serviceLocator.WindowsController.Show(new DriverWindow(), this);
+        }
+
+        public void FindFinesForPlateNumber(string plateNumber)
+        {
+            var allFines =_serviceLocator.FinesReaderWriter.AllFines;
+            _currentPlateNumber = plateNumber;
+            if (allFines.TryGetValue(plateNumber, out var issuedFines))
+            {
+                _currentPlateNumberFines = issuedFines;
+                return;
+            }
+
+            _currentPlateNumberFines = null;
+        }
+
+        public DateTime[] GetAllFinesDates()
+        {
+            return _currentPlateNumberFines?.Select(f => f.DateTimeIssued).ToArray();
+        }
+
+        public IssuedFine[] GetAllIssuedFinesForCurrentNumber() => _currentPlateNumberFines;
+
+        public void PayTheFine(int fineIndex)
+        {
+            var allFines = _serviceLocator.FinesReaderWriter.AllFines;
+            var issuedFinesList = allFines[_currentPlateNumber].ToList();
+            issuedFinesList.RemoveAt(fineIndex);
+            allFines[_currentPlateNumber] = issuedFinesList.ToArray();
+            _serviceLocator.FinesReaderWriter.AllFines = allFines;
         }
     }
 }

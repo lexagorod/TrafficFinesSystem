@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.Encodings.Web;
 using System.Text.Json;
+using System.Text.Unicode;
 using System.Threading.Tasks;
 using UniRx;
 
@@ -44,6 +46,7 @@ namespace Traffic_fine_system
 
                 var serializeOptions = new JsonSerializerOptions
                 {
+                    Encoder = JavaScriptEncoder.Create(UnicodeRanges.BasicLatin, UnicodeRanges.Cyrillic),
                     Converters =
                 {
                  new DictionaryTKeyEnumTValueConverter()
@@ -57,6 +60,7 @@ namespace Traffic_fine_system
         {
             var serializeOptions = new JsonSerializerOptions
             {
+                Encoder = JavaScriptEncoder.Create(UnicodeRanges.BasicLatin, UnicodeRanges.Cyrillic),
                 Converters =
                 {
                  new DictionaryTKeyEnumTValueConverter()

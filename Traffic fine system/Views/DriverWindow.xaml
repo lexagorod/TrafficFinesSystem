@@ -3,11 +3,118 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Traffic_fine_system"
+        xmlns:local="clr-namespace:Traffic_fine_system" xmlns:views="clr-namespace:Traffic_fine_system.Views"
         mc:Ignorable="d"
-        Title="DriverWindow" Height="450" Width="800">
+        WindowStartupLocation="CenterScreen"
+        Title="DriverWindow"  Height="Auto" Width="800" 
+             ResizeMode="NoResize" Background="#FFC2D1A9" Margin="10,10,10,10"
+          >
+    <StackPanel>
 
-    <TextBox x:Name="txtFirstName" Grid.Column="1"  Grid.Row="0" Height="20" Width="100" Margin="10">
-    </TextBox>
+        <Border Background="{x:Null}" CornerRadius="5,5,5,5" BorderThickness="3,3,3,3" BorderBrush="#FF256C18">
+            <Grid Name="findViolator">
 
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Column="0" FontSize="18" Grid.Row="0" Margin="10" Text="Номерной знак" HorizontalAlignment="Center"/>
+
+                <views:TextInputBox TextBoxErrorStyleName="TextBoxStyle" BoundPropertyName="PlateNumber" x:Name="txtNumber" Grid.Column="1"  Grid.Row="0" Height="20" Width="100" Margin="10">
+
+                    <views:TextInputBox.ValidationRules>
+                        <local:PlateNumberValidaitonRule ErrorMessage="Номерной знак должен быть 6 символов в длину" />
+                        <local:NotNullOrEmptyValidationRule ErrorMessage="Номерной знак не должен быть пустым"/>
+                    </views:TextInputBox.ValidationRules>
+
+
+                </views:TextInputBox>
+
+                <Button Content="Найти штрафы" Click="FindViolationsButton_click" Width="Auto" Margin="10"  Grid.Column="1" Grid.Row="1" FontSize="18" BorderBrush="#00052302" BorderThickness="0,0,0,0" Background="#FF49A51B" Foreground="#FF280B36" />
+
+                <Viewbox Grid.Column="0" Grid.Row="2"  Margin="10" >
+                    <StackPanel Orientation="Vertical" Width="200">
+                        <TextBlock x:Name="subHeaderText" 
+                           FontSize="18" 
+                           Margin="10"
+                           TextWrapping="Wrap" 
+                           Foreground="Black"
+                           Text="Выберите штраф по времени" /> 
+                    </StackPanel>
+                </Viewbox>
+
+                <ComboBox Name="violationsListByTime" Height="20" Width="Auto" Grid.Column="1" Grid.Row="2" DropDownClosed="OnDropDownValueChanged">
+                </ComboBox>
+
+                <TextBlock x:Name="dateCanBeChosen" Grid.Column="2" FontSize="18" Grid.Row="2" Margin="10" VerticalAlignment="Center" />
+                
+                <Viewbox Grid.Column="3" Grid.Row="1"  Margin="10" >
+                    <StackPanel Orientation="Vertical" Width="200">
+                        <TextBlock x:Name="findingResult" 
+                           FontSize="18" 
+                           Margin="10"
+                           TextWrapping="Wrap" 
+                           Foreground="Black" />
+                    </StackPanel>
+                </Viewbox>
+
+            </Grid>
+        </Border>
+
+        <Grid Name="fineInfo" Visibility="Collapsed">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+
+
+            <TextBlock Grid.Column="0" FontSize="18" Grid.Row="0" Margin="10" Text="Имя нарушителя" />
+            <TextBlock x:Name="violatorName" Grid.Column="1" FontSize="18" Grid.Row="0" Margin="10" />
+
+            <TextBlock Grid.Column="0" FontSize="18" Grid.Row="1" Margin="10" Text="Тип нарушения" />
+            <TextBlock x:Name="violationType" Grid.Column="1" FontSize="18" Grid.Row="1" Margin="10" />
+        
+            <TextBlock Grid.Column="0" FontSize="18" Grid.Row="2" Margin="10" Text="Дата" />
+            <TextBlock x:Name="date" Grid.Column="1" FontSize="18" Grid.Row="2" Margin="10" />
+        
+            <TextBlock Grid.Column="0" FontSize="18" Grid.Row="3" Margin="10" Text="Размер штрафа" />
+            <TextBlock x:Name="fineAmount" Grid.Column="1" FontSize="18" Grid.Row="3" Margin="10"/>
+
+            <Button Content="Оплатить"  Click="PayTheFineButton_click" Width="Auto" Margin="10"  Grid.Column="1" Grid.Row="4" FontSize="18" BorderBrush="#00052302" BorderThickness="0,0,0,0" Background="#FF49A51B" Foreground="#FF280B36" />
+
+        </Grid>
+        <StackPanel Name="errorsPanel">
+            <Border Width="Auto" CornerRadius="3,3,3,3" BorderBrush="Red" BorderThickness="5" >
+
+                <ItemsControl x:Name="errorList">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock FontSize="18" Text="{Binding Path=Message}" />
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </Border>
+        </StackPanel>
+
+
+
+    </StackPanel>
 </Window>

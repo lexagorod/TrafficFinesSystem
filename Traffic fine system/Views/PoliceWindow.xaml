@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Traffic_fine_system" xmlns:views="clr-namespace:Traffic_fine_system.Views"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
     Title="PoliceWindow" Height="300" Width="600" 
              ResizeMode="NoResize" Background="#FFC2D1A9" Margin="10,10,10,10"
           >
@@ -25,11 +26,12 @@
                     <RowDefinition Height="Auto"></RowDefinition>
                 </Grid.RowDefinitions>
 
-                <TextBlock Grid.Column="0" FontSize="18" Grid.Row="0" Margin="10" Text="Номер" />
+                <TextBlock Grid.Column="0" FontSize="18" Grid.Row="0" Margin="10" Text="Номерной знак" />
 
-                <views:TextInputBox TextBoxErrorStyleName="TextBoxStyle" BoundPropertyName="Number" x:Name="txtNumber" Grid.Column="1"  Grid.Row="0" Height="20" Width="100" Margin="10">
+                <views:TextInputBox TextBoxErrorStyleName="TextBoxStyle" BoundPropertyName="Number" x:Name="txtNumber" Grid.Column="1"  Grid.Row="0" Height="20" Width="Auto" Margin="10">
 
                     <views:TextInputBox.ValidationRules>
+                        <local:SpecialSymbolsValidationRule ErrorMessage="Номерной знак не содержит спец символов" />
                         <local:PlateNumberValidaitonRule ErrorMessage="Номерной знак должен быть 6 символов в длину" />
                         <local:NotNullOrEmptyValidationRule ErrorMessage="Номерной знак не должен быть пустым"/>
                     </views:TextInputBox.ValidationRules>
@@ -39,7 +41,7 @@
 
                 <TextBlock Grid.Column="0" Grid.Row="1" FontSize="18" Margin="10" Text="Имя" />
 
-                <views:TextInputBox Grid.Column="1"  Grid.Row="1" Height="20" Width="100" Margin="10" x:Name="txtName" BoundPropertyName="Name">
+                <views:TextInputBox Grid.Column="1"  Grid.Row="1" Height="20" Width="Auto" Margin="10" x:Name="txtName" BoundPropertyName="Name">
 
                     <views:TextInputBox.ValidationRules>
                         <local:NotNullOrEmptyValidationRule ErrorMessage="Имя не должно быть пустым"/>
@@ -49,12 +51,12 @@
                 
                 <TextBlock Grid.Column="0" Grid.Row="2" FontSize="18" Margin="10" Text="Нарушение" />
 
-                <ComboBox Name="violationsList" Height="20" Width="100" Grid.Column="1" Grid.Row="2">
+                <ComboBox Name="violationsList" Height="20" Width="Auto" Grid.Column="1" Grid.Row="2">
                 </ComboBox>
 
-                <Button Content="Add" Click="AddViolatorButton_click" Width="Auto" Margin="10"  Grid.Column="1" Grid.Row="4" FontSize="18" BorderBrush="#00052302" BorderThickness="0,0,0,0" Background="#FF49A51B" Foreground="#FF280B36" />
+                <TextBlock x:Name="addingResult" Grid.Column="0" Grid.Row="4" FontSize="18" Margin="10"/>
 
-
+                <Button Content="Добавить штраф" Click="AddViolatorButton_click" Width="Auto" Margin="10"  Grid.Column="1" Grid.Row="4" FontSize="18" BorderBrush="#00052302" BorderThickness="0,0,0,0" Background="#FF49A51B" Foreground="#FF280B36" />
 
             </Grid>
         </Border>

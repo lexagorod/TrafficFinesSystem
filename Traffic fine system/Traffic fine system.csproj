@@ -104,14 +104,18 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="BusinessBase.cs" />
+    <Compile Include="PlateNumberSubject.cs" />
     <Compile Include="FineIssueSubject.cs" />
     <Compile Include="FinesReaderWriter.cs" />
     <Compile Include="IssuedFine.cs" />
     <Compile Include="ValidationAttributes\BrokenRule.cs" />
+    <Compile Include="ValidationAttributes\SpecialSymbolValidationAttribute.cs" />
+    <Compile Include="ValidationAttributes\PlateNumberValidationAttribute.cs" />
     <Compile Include="ValidationAttributes\NotNullOrEmptyAttribute.cs" />
     <Compile Include="ValidationAttributes\ValidationAttribute.cs" />
     <Compile Include="ValidationAttributes\ValidationEngine.cs" />
     <Compile Include="Validators\NotNullOrEmptyValidationRule.cs" />
+    <Compile Include="Validators\SpecialSymbolsValidationRule.cs" />
     <Compile Include="Validators\PlateNumberValidationRule.cs" />
     <Compile Include="Validators\NumericValidationRule.cs" />
     <Compile Include="Views\DriverWindow.xaml.cs">

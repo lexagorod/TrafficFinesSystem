@@ -12,6 +12,6 @@ namespace Traffic_fine_system
         public string FineType { get; set; }
         public decimal FineAmount { get; set; }
         public DateTime DateTimeIssued { get; set; }
-        public string VehicleOwner { get; set; }
+        public string ViolatorName { get; set; }
     }
 }

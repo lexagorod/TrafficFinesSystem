@@ -4,13 +4,32 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Traffic_fine_system"
+        WindowStartupLocation="CenterScreen"
         mc:Ignorable="d"
         Title="RegulatorWindow" Height="450" Width="800">
     <Grid>
-        <DataGrid x:Name="FinesInfo">
 
-        </DataGrid>
-        <Button Name="SaveButton" HorizontalAlignment="Left" Content="Сохранить" ClickMode="Release" Width="70" Height="50">
-        </Button>
-    </Grid>
+        <Grid>
+
+             <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+             </Grid.ColumnDefinitions>
+
+             <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <DataGrid x:Name="FinesInfo" Grid.Row="0">
+
+            </DataGrid>
+
+            <Button Name="SaveButton"  Grid.Row="1" HorizontalAlignment="Left" Content="Сохранить" ClickMode="Release" Width="70" Height="50">
+             </Button>
+
+            <TextBlock x:Name="changeSuccess"  Grid.Row="2" HorizontalAlignment="Left" FontSize="18" Margin="10"/>
+         </Grid>
+
+        </Grid>
 </Window>

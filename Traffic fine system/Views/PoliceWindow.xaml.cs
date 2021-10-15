@@ -21,6 +21,11 @@ namespace Traffic_fine_system
     public partial class PoliceWindow : Window, IView<PoliceViewModel>
     {
         private PoliceViewModel _viewModel;
+        private readonly string _fineTypeError = "Тип штрафа должен быть выбран";
+        private readonly string _fineTypePropertyName = "Тип штрафа";
+        private readonly string _successText = "Успешно добавлено";
+        private readonly string _failedText = "Ошибка";
+
         public PoliceWindow()
         {
             InitializeComponent();
@@ -43,12 +48,24 @@ namespace Traffic_fine_system
 
             var isValid = validationEngine.Validate(fineIssueSubject);
 
-            errorList.ItemsSource = validationEngine.GetBrokenRules();
+            var brokenRules = validationEngine.GetBrokenRules().ToList();
+
+            if (string.IsNullOrEmpty(violationsList.Text))
+            {
+                brokenRules.Add(new BrokenRule() { Message = _fineTypeError, PropertyName = _fineTypePropertyName });
+                isValid = false;
+            }
+
+            errorList.ItemsSource = brokenRules;
 
             if (isValid)
             {
-                _viewModel.AddFine(fineIssueSubject.Number, new IssuedFine { FineType = violationsList.Text, FineAmount = 15, VehicleOwner = fineIssueSubject.Name, DateTimeIssued = DateTime.Now });
+                _viewModel.AddFine(fineIssueSubject.Number, new FineType(violationsList.Text), fineIssueSubject.Name);
+                addingResult.Text = _successText;
+
+                return;
             }
+            addingResult.Text = _failedText;
         }
     }
 }

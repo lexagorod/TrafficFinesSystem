@@ -1,3 +1,14 @@
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Debug\Views\TextInputBox.baml
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Debug\Views\DriverWindow.g.cs
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Debug\Views\MainWindow.g.cs
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Debug\Views\PoliceWindow.g.cs
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Debug\Views\RegulatorWindow.g.cs
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Debug\Views\FineBox.g.cs
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Debug\Views\TextInputBox.g.cs
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Debug\App.g.cs
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Debug\Traffic fine system_MarkupCompile.cache
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Debug\Traffic fine system_MarkupCompile.lref
 C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\bin\Debug\Server\FinesCost.json
 C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\bin\Debug\Server\ActualFines.json
 C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\bin\Debug\Traffic fine system.exe.config
@@ -23,17 +34,6 @@ C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system
 C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\bin\Debug\System.ValueTuple.xml
 C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\bin\Debug\UniRx.xml
-C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Debug\Views\TextInputBox.baml
-C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Debug\Views\DriverWindow.g.cs
-C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Debug\Views\MainWindow.g.cs
-C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Debug\Views\PoliceWindow.g.cs
-C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Debug\Views\RegulatorWindow.g.cs
-C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Debug\Views\FineBox.g.cs
-C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Debug\Views\TextInputBox.g.cs
-C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Debug\App.g.cs
-C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Debug\GeneratedInternalTypeHelper.g.cs
-C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Debug\Traffic fine system_MarkupCompile.cache
-C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Debug\Traffic fine system_MarkupCompile.lref
 C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Debug\Views\DriverWindow.baml
 C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Debug\Views\MainWindow.baml
 C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Debug\Views\PoliceWindow.baml

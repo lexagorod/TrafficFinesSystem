@@ -22,7 +22,8 @@ namespace Traffic_fine_system
     public partial class RegulatorWindow : Window, IView<RegulatorViewModel>
     {
         private RegulatorViewModel _viewModel;
-
+        private readonly string _addingSuccess = "Штрафы изменены удачно";
+        private readonly string _addingFail = "Или штраф содержит спец символы или его значение меньше равно 0";
         public RegulatorWindow()
         {
             InitializeComponent();
@@ -41,6 +42,15 @@ namespace Traffic_fine_system
             FinesInfo.CanUserDeleteRows = true;
         }
 
-        private void OnSaveClick(object sender, RoutedEventArgs e) => _viewModel.SetTrafficFinesInfo();
+        private void OnSaveClick(object sender, RoutedEventArgs e)
+        {
+            if (_viewModel.TryToSetTrafficFinesInfo())
+            {
+                changeSuccess.Text = _addingSuccess;
+                return;
+            }
+
+            changeSuccess.Text = _addingFail;
+        }
     }
 }

@@ -7,10 +7,9 @@ using System.Windows;
 
 namespace Traffic_fine_system
 {
-    public class FineIssueSubject : BusinessBase,INotifyPropertyChanged
+    public class PlateNumberSubject : BusinessBase,INotifyPropertyChanged
     {
-        private string _number;
-        private string _name; 
+        private string _plateNumber;
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -21,33 +20,19 @@ namespace Traffic_fine_system
         }
 
         [SpecialSymbolsValidation("В знаке не должно быть спец символов")]
-        [PlateNumberValidation("Номер должен состоять из 6 цифр")]
+        [PlateNumberValidation("Знак должен состоять из 6 символов")]
         [NotNullOrEmpty("Номер не может быть null или пустым!")]
-        public string Number
+        public string PlateNumber
         {
             get
             {
-                return _number;
+                return _plateNumber;
             }
             set
-            {_number = value; 
+            {
+                _plateNumber = value; 
                 OnPropertyChanged("Number");
             }
         }
-
-        [SpecialSymbolsValidation("В имени не должно быть спец символов")]
-        [NotNullOrEmpty("Имя не может быть null или пустым!")]
-        public string Name
-        {
-            get { return _name;}
-            set
-            {
-                _name = value; 
-                OnPropertyChanged("Name");
-            }
-        }
-
-
-
     }
 }

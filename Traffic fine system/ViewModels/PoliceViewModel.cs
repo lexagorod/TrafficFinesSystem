@@ -17,9 +17,11 @@ namespace Traffic_fine_system.ViewModels
 
         public FineType[] GetFineTypes() => _serviceLocator.TrafficFinesModel.TrafficFinesInfo.Keys.ToArray();
 
-        public void AddFine(string plateNumber, IssuedFine issuedFine)
+        public void AddFine(string plateNumber, FineType fineType, string trafficViolatorName)
         {
+            plateNumber = plateNumber.ToUpperInvariant();
             var allFines = _serviceLocator.FinesReaderWriter.AllFines;
+            var issuedFine = new IssuedFine() { FineType = (string)fineType, ViolatorName = trafficViolatorName, DateTimeIssued = DateTime.Now, FineAmount = _serviceLocator.TrafficFinesModel.TrafficFinesInfo[fineType] };
 
             if (allFines.TryGetValue(plateNumber, out var foundIssuedFine))
             {

@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.Encodings.Web;
 using System.Text.Json;
+using System.Text.Unicode;
 using System.Threading.Tasks;
 using UniRx;
 
@@ -42,12 +44,23 @@ namespace Traffic_fine_system
 
                 var serializeOptions = new JsonSerializerOptions
                 {
+                    Encoder = JavaScriptEncoder.Create(UnicodeRanges.BasicLatin, UnicodeRanges.Cyrillic),
                     Converters =
                 {
                  new DictionaryTKeyEnumTValueConverter()
                 }
                 };
-                _allFinesRx.Value = JsonSerializer.Deserialize<Dictionary<string, IssuedFine[]>>(file.ReadToEnd(), serializeOptions);
+                try
+                {
+                    _allFinesRx.Value = JsonSerializer.Deserialize<Dictionary<string, IssuedFine[]>>(file.ReadToEnd(), serializeOptions);
+                }
+                catch (Exception e)
+                {
+                    if(e is JsonException)
+                        Console.WriteLine("No fines data in json, initializing...");
+
+                    _allFinesRx.Value = new Dictionary<string, IssuedFine[]>();
+                }
             }
         }
 
@@ -55,6 +68,7 @@ namespace Traffic_fine_system
         {
             var serializeOptions = new JsonSerializerOptions
             {
+                Encoder = JavaScriptEncoder.Create(UnicodeRanges.BasicLatin, UnicodeRanges.Cyrillic),
                 Converters =
                 {
                  new DictionaryTKeyEnumTValueConverter()
