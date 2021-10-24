@@ -48,14 +48,14 @@
                            Margin="10"
                            TextWrapping="Wrap" 
                            Foreground="Black"
-                           Text="Выберите штраф по времени" /> 
+                           Text="Штрафы по времени" /> 
                     </StackPanel>
                 </Viewbox>
 
                 <ComboBox Name="violationsListByTime" Height="20" Width="Auto" Grid.Column="1" Grid.Row="2" DropDownClosed="OnDropDownValueChanged">
                 </ComboBox>
 
-                <TextBlock x:Name="dateCanBeChosen" Grid.Column="2" FontSize="18" Grid.Row="2" Margin="10" VerticalAlignment="Center" />
+                <TextBlock x:Name="dateCanBeChosen" Grid.Column="2" FontSize="18" Grid.Row="2" Margin="10" VerticalAlignment="Center" Background="Red" />
                 
                 <Viewbox Grid.Column="3" Grid.Row="1"  Margin="10" >
                     <StackPanel Orientation="Vertical" Width="200">

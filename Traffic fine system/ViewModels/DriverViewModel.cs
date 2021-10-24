@@ -43,6 +43,10 @@ namespace Traffic_fine_system.ViewModels
             var issuedFinesList = allFines[_currentPlateNumber].ToList();
             issuedFinesList.RemoveAt(fineIndex);
             allFines[_currentPlateNumber] = issuedFinesList.ToArray();
+
+            if (issuedFinesList.Count == 0)
+                allFines.Remove(_currentPlateNumber);
+
             _serviceLocator.FinesReaderWriter.AllFines = allFines;
         }
     }

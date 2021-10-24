@@ -23,7 +23,7 @@ namespace Traffic_fine_system
         private DriverViewModel _viewModel;
         private readonly string _finesFounded = "Штрафы найдены";
         private readonly string _finesNotFounded = "Штрафы для номера не найдены";
-        private readonly string _dateCanBeChosen = "Можете найти штраф по времени";
+        private readonly string _dateCanBeChosen = "Выберите штраф по времени";
         public DriverWindow()
         {
             InitializeComponent();

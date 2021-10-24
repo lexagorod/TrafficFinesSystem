@@ -17,6 +17,7 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"></ColumnDefinition>
                     <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
 
                 <Grid.RowDefinitions>
@@ -54,7 +55,7 @@
                 <ComboBox Name="violationsList" Height="20" Width="Auto" Grid.Column="1" Grid.Row="2">
                 </ComboBox>
 
-                <TextBlock x:Name="addingResult" Grid.Column="0" Grid.Row="4" FontSize="18" Margin="10"/>
+                <TextBlock x:Name="addingResult" Grid.Column="2" Grid.Row="4" FontSize="18" Margin="10" Background="Red"/>
 
                 <Button Content="Добавить штраф" Click="AddViolatorButton_click" Width="Auto" Margin="10"  Grid.Column="1" Grid.Row="4" FontSize="18" BorderBrush="#00052302" BorderThickness="0,0,0,0" Background="#FF49A51B" Foreground="#FF280B36" />
 

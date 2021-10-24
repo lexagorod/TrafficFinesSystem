@@ -155,10 +155,7 @@
     <Compile Include="FineCost.cs" />
     <Compile Include="Converter.cs" />
     <Compile Include="Fines\FineType.cs" />
-    <Compile Include="FineManager.cs" />
-    <Compile Include="IDriver.cs" />
     <Compile Include="IFineCost.cs" />
-    <Compile Include="IFineIssuer.cs" />
     <Compile Include="Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
