@@ -27,7 +27,7 @@
                     <RowDefinition Height="Auto"></RowDefinition>
                 </Grid.RowDefinitions>
 
-                <TextBlock Grid.Column="0" FontSize="18" Grid.Row="0" Margin="10" Text="Номерной знак" HorizontalAlignment="Center"/>
+                <TextBlock Grid.Column="0" FontSize="18" Grid.Row="0" Margin="10" Text="Введите номерной знак" HorizontalAlignment="Center"/>
 
                 <views:TextInputBox TextBoxErrorStyleName="TextBoxStyle" BoundPropertyName="PlateNumber" x:Name="txtNumber" Grid.Column="1"  Grid.Row="0" Height="20" Width="100" Margin="10">
 

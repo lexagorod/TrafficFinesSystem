@@ -103,11 +103,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="BusinessBase.cs" />
-    <Compile Include="PlateNumberSubject.cs" />
-    <Compile Include="FineIssueSubject.cs" />
-    <Compile Include="FinesReaderWriter.cs" />
-    <Compile Include="IssuedFine.cs" />
+    <Compile Include="Data\BusinessBase.cs" />
+    <Compile Include="Data\PlateNumberSubject.cs" />
+    <Compile Include="Data\FineIssueSubject.cs" />
+    <Compile Include="Services\FinesReaderWriter.cs" />
+    <Compile Include="Data\IssuedFine.cs" />
     <Compile Include="ValidationAttributes\BrokenRule.cs" />
     <Compile Include="ValidationAttributes\SpecialSymbolValidationAttribute.cs" />
     <Compile Include="ValidationAttributes\PlateNumberValidationAttribute.cs" />
@@ -121,13 +121,13 @@
     <Compile Include="Views\DriverWindow.xaml.cs">
       <DependentUpon>DriverWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="IView.cs" />
-    <Compile Include="IViewModel.cs" />
+    <Compile Include="Interfaces\IView.cs" />
+    <Compile Include="Interfaces\IViewModel.cs" />
     <Compile Include="Views\RegulatorWindow.xaml.cs">
       <DependentUpon>RegulatorWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ServiceLocator.cs" />
-    <Compile Include="TrafficFinesModel.cs" />
+    <Compile Include="Services\ServiceLocator.cs" />
+    <Compile Include="Services\TrafficFinesModel.cs" />
     <Compile Include="ViewModels\DriverViewModel.cs" />
     <Compile Include="ViewModels\PoliceViewModel.cs" />
     <Compile Include="ViewModels\RegulatorViewModel.cs" />
@@ -137,7 +137,7 @@
     <Compile Include="Views\TextInputBox.xaml.cs">
       <DependentUpon>TextInputBox.xaml</DependentUpon>
     </Compile>
-    <Compile Include="WindowsController.cs" />
+    <Compile Include="Services\WindowsController.cs" />
     <Page Include="Views\DriverWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -147,15 +147,15 @@
       <SubType>Designer</SubType>
     </Page>
     <Compile Include="ActorsButtonFactory.cs" />
-    <Compile Include="ActorType.cs" />
+    <Compile Include="Data\ActorType.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="FineCost.cs" />
+    <Compile Include="Data\FineCost.cs" />
     <Compile Include="Converter.cs" />
-    <Compile Include="Fines\FineType.cs" />
-    <Compile Include="IFineCost.cs" />
+    <Compile Include="Data\FineType.cs" />
+    <Compile Include="Interfaces\IFineCost.cs" />
     <Compile Include="Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -226,5 +226,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
