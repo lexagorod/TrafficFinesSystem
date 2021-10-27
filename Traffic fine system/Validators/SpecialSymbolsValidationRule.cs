@@ -6,7 +6,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows.Controls;
 
-namespace Traffic_fine_system
+namespace TrafficFineSystem
 {
     public class SpecialSymbolsValidationRule : ValidationRule
     {

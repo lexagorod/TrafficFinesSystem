@@ -1,7 +1,7 @@
-﻿<Application x:Class="Traffic_fine_system.App"
+﻿<Application x:Class="TrafficFineSystem.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:Traffic_fine_system">
+             xmlns:local="clr-namespace:TrafficFineSystem">
     <Application.Resources>
 
     </Application.Resources>

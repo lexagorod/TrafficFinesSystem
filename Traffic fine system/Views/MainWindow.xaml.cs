@@ -15,7 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Traffic_fine_system
+namespace TrafficFineSystem
 {
     public partial class MainWindow : Window, IView<MainWindowViewModel>
     {

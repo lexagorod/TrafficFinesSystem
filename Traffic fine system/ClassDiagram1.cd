@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Traffic_fine_system.ActorsButtonFactory" Collapsed="true">
+    <Position X="21.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ActorsButtonFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Traffic_fine_system.App" Collapsed="true">
+    <Position X="23.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Traffic_fine_system.DictionaryTKeyEnumTValueConverter" Collapsed="true">
+    <Position X="27" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Converter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Traffic_fine_system.BusinessBase" Collapsed="true">
+    <Position X="10" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\BusinessBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Traffic_fine_system.FineCost" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="23.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Data\FineCost.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Traffic_fine_system.FineIssueSubject" Collapsed="true">
+    <Position X="11" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAIEAAAAQAgAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Data\FineIssueSubject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Traffic_fine_system.IssuedFine" Collapsed="true">
+    <Position X="27" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAACgAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Data\IssuedFine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Traffic_fine_system.PlateNumberSubject" Collapsed="true">
+    <Position X="8.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAIAAAAAAAgQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\PlateNumberSubject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Traffic_fine_system.IViewModel" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Traffic_fine_system.FinesReaderWriter">
+    <Position X="11.25" Y="6.75" Width="1.75" />
+    <Members>
+      <Field Name="_allFinesRx" Hidden="true" />
+      <Field Name="_cachedAllFines" Hidden="true" />
+      <Field Name="_trafficFinesPath" Hidden="true" />
+      <Method Name="FinesReaderWriter" Hidden="true" />
+      <Method Name="SubscribeReactiveJsonChange" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAADAAAAAAAAAAAQAAEAAAAAAAAAAAIAAAABAAABAA=</HashCode>
+      <FileName>Services\FinesReaderWriter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Traffic_fine_system.ServiceLocator">
+    <Position X="13.75" Y="3.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAJAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Services\ServiceLocator.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="FinesReaderWriter" />
+      <Field Name="TrafficFinesModel" />
+      <Field Name="WindowsController" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Traffic_fine_system.TrafficFinesModel">
+    <Position X="13.75" Y="6.75" Width="2.25" />
+    <Members>
+      <Field Name="_cachedtrafficFinesInfo" Hidden="true" />
+      <Field Name="_trafficFinesInfoPath" Hidden="true" />
+      <Field Name="_trafficFinesInfoRX" Hidden="true" />
+      <Method Name="SubscribeReactiveJsonChange" Hidden="true" />
+      <Method Name="TrafficFinesModel" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAEAAAQAAAEAAAAACAAAgAAAAAAAQAAAAA=</HashCode>
+      <FileName>Services\TrafficFinesModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Traffic_fine_system.WindowsController">
+    <Position X="16.75" Y="6.75" Width="1.75" />
+    <Members>
+      <Method Name="WindowsController" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAEAAAAAAACAAAA=</HashCode>
+      <FileName>Services\WindowsController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Traffic_fine_system.BrokenRule" Collapsed="true">
+    <Position X="25.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIABAAAA=</HashCode>
+      <FileName>ValidationAttributes\BrokenRule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Traffic_fine_system.NotNullOrEmptyAttribute" Collapsed="true">
+    <Position X="24.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ValidationAttributes\NotNullOrEmptyAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Traffic_fine_system.PlateNumberValidationAttribute" Collapsed="true">
+    <Position X="26.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ValidationAttributes\PlateNumberValidationAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Traffic_fine_system.SpecialSymbolsValidationAttribute" Collapsed="true">
+    <Position X="29" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ValidationAttributes\SpecialSymbolValidationAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Traffic_fine_system.ValidationAttribute" Collapsed="true">
+    <Position X="26.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>ValidationAttributes\ValidationAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Traffic_fine_system.ValidationEngine" Collapsed="true">
+    <Position X="28" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAgAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ValidationAttributes\ValidationEngine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Traffic_fine_system.NotNullOrEmptyValidationRule" Collapsed="true">
+    <Position X="24" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Validators\NotNullOrEmptyValidationRule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Traffic_fine_system.NumericValidationRule" Collapsed="true">
+    <Position X="23" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Validators\NumericValidationRule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Traffic_fine_system.PlateNumberValidaitonRule" Collapsed="true">
+    <Position X="25.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Validators\PlateNumberValidationRule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Traffic_fine_system.SpecialSymbolsValidationRule" Collapsed="true">
+    <Position X="27" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Validators\SpecialSymbolsValidationRule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Traffic_fine_system.MainWindowViewModel" Collapsed="true">
+    <Position X="5.5" Y="1.75" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\MainWindowViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Traffic_fine_system.DriverWindow" BaseTypeListCollapsed="true">
+    <Position X="7.75" Y="6.5" Width="2.25" />
+    <Members>
+      <Method Name="DriverWindow" Hidden="true" />
+      <Method Name="Initialize" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAIABAAAAAQAQCQAAAAAAAAAAAAAAAAAABAAgAAA=</HashCode>
+      <FileName>Views\DriverWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_viewModel" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Traffic_fine_system.MainWindow" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="6.5" Width="1.5" />
+    <Members>
+      <Method Name="Initialize" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAQAQAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_viewModel" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Traffic_fine_system.PoliceWindow" BaseTypeListCollapsed="true">
+    <Position X="0.75" Y="6.5" Width="2" />
+    <Members>
+      <Method Name="Initialize" Hidden="true" />
+      <Method Name="PoliceWindow" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AACAAEAAAAgAAQAQAAAAAAAAAIAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Views\PoliceWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_viewModel" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Traffic_fine_system.RegulatorWindow" BaseTypeListCollapsed="true">
+    <Position X="3.25" Y="6.5" Width="1.75" />
+    <Members>
+      <Method Name="Initialize" Hidden="true" />
+      <Method Name="InitializeFinesView" Hidden="true" />
+      <Method Name="RegulatorWindow" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAQAQAAAAAAAgAAAAAAAAACAAAACAAAA=</HashCode>
+      <FileName>Views\RegulatorWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_viewModel" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Traffic_fine_system.Properties.Resources" Collapsed="true">
+    <Position X="25.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Traffic_fine_system.Properties.Settings" Collapsed="true">
+    <Position X="22" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Traffic_fine_system.ViewModels.DriverViewModel">
+    <Position X="7.75" Y="1.75" Width="2.75" />
+    <Members>
+      <Method Name="DriverViewModel" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAIAACABAAAAAAAIAAECAAAAA=</HashCode>
+      <FileName>ViewModels\DriverViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_serviceLocator" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Traffic_fine_system.ViewModels.PoliceViewModel">
+    <Position X="0.75" Y="1.75" Width="1.5" />
+    <Members>
+      <Method Name="PoliceViewModel" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAACAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\PoliceViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_serviceLocator" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Traffic_fine_system.ViewModels.RegulatorViewModel">
+    <Position X="3" Y="1.75" Width="2" />
+    <Members>
+      <Method Name="RegulatorViewModel" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="_serviceLocator" Type="Traffic_fine_system.ServiceLocator" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.469" Y="1.75" />
+        <Point X="4.469" Y="1.375" />
+        <Point X="13.375" Y="1.375" />
+        <Point X="13.375" Y="5.228" />
+        <Point X="14.792" Y="5.228" Type="JumpStart" />
+        <Point X="14.958" Y="5.228" Type="JumpEnd" />
+        <Point X="16.062" Y="5.228" />
+        <Point X="16.062" Y="4.853" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAgAAAAAABIBAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\RegulatorViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_serviceLocator" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Traffic_fine_system.Views.FineBox" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="23" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Views\FineBox.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Traffic_fine_system.Views.TextInputBox" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="28.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAARAAAIAAAAAAAAAAAAGAAAGgAAAgAAAAACAAAAAg=</HashCode>
+      <FileName>Views\TextInputBox.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Struct Name="Traffic_fine_system.ActorType" Collapsed="true">
+    <Position X="21.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAIAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\ActorType.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Traffic_fine_system.FineType" Collapsed="true">
+    <Position X="23.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAIAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\FineType.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="Traffic_fine_system.IFineCost">
+    <Position X="22" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Interfaces\IFineCost.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Traffic_fine_system.IView&lt;T&gt;">
+    <Position X="0.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="System.Windows.Markup.IComponentConnector">
+    <Position X="2.75" Y="8.5" Width="1.75" />
+    <TypeIdentifier />
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

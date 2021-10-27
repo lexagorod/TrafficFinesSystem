@@ -1,4 +1,4 @@
-﻿namespace Traffic_fine_system
+﻿namespace TrafficFineSystem
 {
     public class IViewModel
     {

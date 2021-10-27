@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace Traffic_fine_system
+namespace TrafficFineSystem
 {
     public class WindowsController
     {

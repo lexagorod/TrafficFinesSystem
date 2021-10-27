@@ -12,9 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using static Traffic_fine_system.RegulatorWindow;
+using static TrafficFineSystem.RegulatorWindow;
 
-namespace Traffic_fine_system.Views
+namespace TrafficFineSystem.Views
 {
     /// <summary>
     /// Interaction logic for TextBox.xaml

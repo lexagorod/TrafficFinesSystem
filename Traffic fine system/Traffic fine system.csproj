@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{A64014ED-6538-4A05-AD91-78D56BFE6E85}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Traffic_fine_system</RootNamespace>
-    <AssemblyName>Traffic fine system</AssemblyName>
+    <RootNamespace>TrafficFineSystem</RootNamespace>
+    <AssemblyName>TrafficFineSystem</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -106,6 +106,7 @@
     <Compile Include="Data\BusinessBase.cs" />
     <Compile Include="Data\PlateNumberSubject.cs" />
     <Compile Include="Data\FineIssueSubject.cs" />
+    <Compile Include="Services\FinesCostReaderWriter.cs" />
     <Compile Include="Services\FinesReaderWriter.cs" />
     <Compile Include="Data\IssuedFine.cs" />
     <Compile Include="ValidationAttributes\BrokenRule.cs" />
@@ -127,7 +128,6 @@
       <DependentUpon>RegulatorWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Services\ServiceLocator.cs" />
-    <Compile Include="Services\TrafficFinesModel.cs" />
     <Compile Include="ViewModels\DriverViewModel.cs" />
     <Compile Include="ViewModels\PoliceViewModel.cs" />
     <Compile Include="ViewModels\RegulatorViewModel.cs" />
@@ -199,6 +199,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -9,7 +9,7 @@ using System.Text.Unicode;
 using System.Threading.Tasks;
 using UniRx;
 
-namespace Traffic_fine_system
+namespace TrafficFineSystem
 {
     public class FinesReaderWriter
     {

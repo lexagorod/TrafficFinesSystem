@@ -6,7 +6,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace Traffic_fine_system.ViewModels
+namespace TrafficFineSystem.ViewModels
 {
     public class RegulatorViewModel : IViewModel
     {

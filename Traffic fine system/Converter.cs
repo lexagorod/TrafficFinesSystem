@@ -4,7 +4,7 @@ using System.Reflection;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace Traffic_fine_system
+namespace TrafficFineSystem
 {
     public class DictionaryTKeyEnumTValueConverter : JsonConverterFactory
     {

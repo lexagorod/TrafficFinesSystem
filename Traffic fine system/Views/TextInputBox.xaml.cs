@@ -14,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Traffic_fine_system.Views
+namespace TrafficFineSystem.Views
 {
     /// <summary>
     /// Interaction logic for TextInputBox.xaml

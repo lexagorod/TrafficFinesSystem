@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Traffic_fine_system
+namespace TrafficFineSystem
 {
     public interface IView<T> where T: IViewModel
     {

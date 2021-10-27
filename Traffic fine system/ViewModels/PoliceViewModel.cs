@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Traffic_fine_system.ViewModels
+namespace TrafficFineSystem.ViewModels
 {
     public class PoliceViewModel : IViewModel
     {

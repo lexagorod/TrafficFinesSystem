@@ -5,7 +5,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 
-namespace Traffic_fine_system
+namespace TrafficFineSystem
 {
     public class ValidationEngine
     {

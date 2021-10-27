@@ -1,0 +1,49 @@
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\bin\Release\Server\FinesCost.json
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\bin\Release\Server\ActualFines.json
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\bin\Release\Microsoft.Bcl.AsyncInterfaces.dll
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\bin\Release\System.Buffers.dll
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\bin\Release\System.Memory.dll
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\bin\Release\System.Numerics.Vectors.dll
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\bin\Release\System.Text.Encodings.Web.dll
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\bin\Release\System.Text.Json.dll
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\bin\Release\System.Threading.Tasks.Extensions.dll
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\bin\Release\System.ValueTuple.dll
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\bin\Release\UniRx.dll
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\bin\Release\Microsoft.Bcl.AsyncInterfaces.xml
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\bin\Release\System.Buffers.xml
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\bin\Release\System.Memory.xml
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\bin\Release\System.Numerics.Vectors.xml
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\bin\Release\System.Text.Encodings.Web.xml
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\bin\Release\System.Text.Json.xml
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\bin\Release\System.Threading.Tasks.Extensions.xml
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\bin\Release\System.ValueTuple.xml
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\bin\Release\UniRx.xml
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Release\Traffic fine system.csprojAssemblyReference.cache
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Release\Views\TextInputBox.baml
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Release\Views\DriverWindow.g.cs
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Release\Views\MainWindow.g.cs
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Release\Views\PoliceWindow.g.cs
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Release\Views\RegulatorWindow.g.cs
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Release\Views\FineBox.g.cs
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Release\Views\TextInputBox.g.cs
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Release\App.g.cs
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Release\Views\DriverWindow.baml
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Release\Views\MainWindow.baml
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Release\Views\PoliceWindow.baml
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Release\Views\RegulatorWindow.baml
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Release\Views\FineBox.baml
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Release\Traffic fine system.csproj.GenerateResource.cache
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Release\Traffic fine system.csproj.CoreCompileInputs.cache
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Release\Traffic fine system.csproj.CopyComplete
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\bin\Release\TrafficFineSystem.exe.config
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\bin\Release\TrafficFineSystem.exe
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\bin\Release\TrafficFineSystem.pdb
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Release\TrafficFineSystem_MarkupCompile.cache
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Release\TrafficFineSystem_MarkupCompile.lref
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Release\TrafficFineSystem.g.resources
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Release\TrafficFineSystem.Properties.Resources.resources
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Release\TrafficFineSystem.exe
+C:\учеба\Разработка ПО\Курсовик\src\Traffic fine system\Traffic fine system\obj\Release\TrafficFineSystem.pdb

@@ -12,9 +12,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using Traffic_fine_system.ViewModels;
+using TrafficFineSystem.ViewModels;
 
-namespace Traffic_fine_system
+namespace TrafficFineSystem
 {
     /// <summary>
     /// Interaction logic for RegulatorWindow.xaml

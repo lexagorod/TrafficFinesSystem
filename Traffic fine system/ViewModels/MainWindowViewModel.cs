@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using Traffic_fine_system.ViewModels;
+using TrafficFineSystem.ViewModels;
 
-namespace Traffic_fine_system
+namespace TrafficFineSystem
 {
     public class MainWindowViewModel : IViewModel
     {

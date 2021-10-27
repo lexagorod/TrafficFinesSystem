@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Controls;
 
-namespace Traffic_fine_system
+namespace TrafficFineSystem
 {
     public class NotNullOrEmptyValidationRule : ValidationRule
     {

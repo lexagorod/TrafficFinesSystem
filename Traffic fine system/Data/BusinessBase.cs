@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Windows;
 
-namespace Traffic_fine_system
+namespace TrafficFineSystem
 {
     public class BusinessBase
     {

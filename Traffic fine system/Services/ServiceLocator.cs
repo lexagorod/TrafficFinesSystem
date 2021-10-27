@@ -4,16 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Traffic_fine_system
+namespace TrafficFineSystem
 {
     public class ServiceLocator
     {
         public WindowsController WindowsController;
-        public TrafficFinesModel TrafficFinesModel;
+        public FinesCostReaderWriter TrafficFinesModel;
         public FinesReaderWriter FinesReaderWriter;
         public ServiceLocator()
         {
-            TrafficFinesModel = new TrafficFinesModel();
+            TrafficFinesModel = new FinesCostReaderWriter();
             WindowsController = new WindowsController();
             FinesReaderWriter = new FinesReaderWriter();
         }
