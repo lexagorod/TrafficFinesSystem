@@ -11,6 +11,7 @@ using UniRx;
 
 namespace TrafficFineSystem
 {
+    //TO DO: SINGLE INTERFACE WITH FINEREADERWRITER or ABSTRACT CLASS
     public class FinesCostReaderWriter
     {
         private readonly string _trafficFinesInfoPath = "Server/FinesCost.json";

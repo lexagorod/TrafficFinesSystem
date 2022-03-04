@@ -11,6 +11,7 @@ using UniRx;
 
 namespace TrafficFineSystem
 {
+    //TO DO: SINGLE INTERFACE WITH FINESCOSTREADERWRITER or ABSTRACT CLASS
     public class FinesReaderWriter
     {
         private readonly string _trafficFinesPath = "Server/ActualFines.json";
